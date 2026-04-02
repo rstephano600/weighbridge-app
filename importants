@@ -1,0 +1,25 @@
+Disable NIC Sleep (IMPORTANT)
+
+Device Manager
+
+Network Adapter → Properties
+
+Power Management
+
+❌ Uncheck “Allow computer to turn off…”
+
+
+php artisan install:api
+php artisan make:job ProcessWeighbridgeData
+
+
+Create queue tables
+php artisan queue:table
+php artisan migrate
+
+
+Start worker
+php artisan queue:work
+
+install request
+python -m pip install requests
